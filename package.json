@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "compile": "babel src --presets @babel/react src --out-dir public",
-    "watch": "babel src --presets @babel/react src --out-dir public --watch --verbose"
+    "watch": "babel src --presets @babel/react src --out-dir public --watch --verbose",
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,11 @@
   "devDependencies": {
     "@babel/cli": "^7.26.4",
     "@babel/core": "^7.26.0",
-    "@babel/preset-react": "^7.26.3"
-  }
+    "@babel/preset-react": "^7.26.3",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "type": "module"
 }
